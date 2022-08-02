@@ -1,0 +1,575 @@
+//import colores
+@import "base/variablesColor";
+@import "base/mixin";
+@import "base/extend";
+@import "base/listas";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+
+}
+   
+
+
+//variables
+
+
+
+ /*ESTILO DEL HTML INDEX*/
+body{
+    background-color: $colorPrincipal;
+    font-family: 'Josefin Sans', sans-serif;
+    .fondoUno{
+        background-color: $colorSecundario;
+    }
+     /*estilos del header*/
+    header{
+    background-color: $colorPrincipal;
+    font-family: 'Josefin Sans', sans-serif;
+   
+       nav ul {  
+         padding: nth($list: $medidas, $n:1);
+         gap: nth($list: $medidas, $n:2);
+         li{   
+            list-style: none;   
+            font-size: nth($list: $medidas, $n:2);
+            padding: nth($list: $medidas, $n:1);
+         }
+     }
+    
+      .enlaces{
+         text-decoration: none;
+         color: $colorEnlaces;
+      }
+      h1{
+         padding: nth($list: $medidas, $n:2);
+         span{
+            color:$colorSpan;
+             }
+      }
+  }
+    .subTituloIndex{
+        padding: nth($list: $medidas, $n:2);
+    }
+    .subTitulo{
+        margin: nth($list: $medidas, $n:3);
+        color: $colorEnlaces;
+    }
+    .carousel-inner{
+        padding: nth($list: $medidas, $n:2);
+    }
+
+     
+.mainInicio{
+    margin: nth($list: $medidas, $n:2);
+    display:grid ;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    grid-template-areas:"top1 top2"
+                        "top3 top4"
+                        "top5 top6"
+                        "top7 top8"
+                        "top9 top10" ;
+/*utilizando mixin en los tops 10*/
+                        .tops1{
+                            grid-area: top1;
+                            @include tops;
+                        }
+                        .tops2{
+                            grid-area: top2;
+                            @include tops;
+                        }
+                        .tops3{
+                            grid-area: top3;
+                            @include tops;
+                        }
+                        .tops4{
+                            grid-area: top4;
+                            @include tops;
+                        }
+                        .tops5{
+                            grid-area: top5;
+                            @include tops;
+                        }
+                        .tops6{
+                            grid-area: top6;
+                            @include tops;
+                        }
+                        .tops7{
+                            grid-area: top7;
+                            @include tops;
+                        }
+                        .tops8{
+                            grid-area: top8;
+                            @include tops;
+                        }
+                        .tops9{
+                            grid-area: top9;
+                            @include tops;
+                        }
+                        .tops10{
+                            grid-area: top10;
+                            @include tops;
+                        }
+
+}
+footer{
+    background-color: $colorTerciario;
+    color: $colorLetras;
+    padding: nth($list: $medidas, $n:1);
+}
+
+  
+}
+
+/* ESTILO DEL HTML COMPRA/VENTA*/
+
+/*estilo de el main conteniendo las compras y ventas*/
+.subTitulo2{
+    margin:nth($list: $medidas, $n:2);
+    color: $colorLetras;
+}
+
+/*GRID*/
+.mainCompraVenta{
+    margin: nth($list: $medidas, $n:2);
+    display:grid ;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto ;
+    grid-template-areas: "compraVenta1 compraVenta2"
+                         "compraVenta3 compraVenta4"
+                         "compraVenta5 compraVenta6"
+                         "compraVenta7 compraVenta8"
+                         "compraVenta9 compraVenta10"
+                         "compraVenta11 compraVenta12"
+                         "compraVenta13 compraVenta14"
+                         "compraVenta15 compraVenta16";
+                         .compraVenta1{  
+                            grid-area:compraVenta1 ; 
+                           @include compraVenta;
+                           .botonC{
+                            background-color: $colorBotonC;
+                            @extend %boton;
+                        }
+                        .botonV{
+                            background-color: $colorBotonV;
+                            @extend %boton;
+                        }
+                           
+                            
+                        }
+                        .compraVenta2{  
+                            grid-area:compraVenta2 ; 
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta3{ 
+                            grid-area:compraVenta3 ;  
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta4{
+                            grid-area:compraVenta4 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta5{
+                            grid-area:compraVenta5 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta6{
+                            grid-area:compraVenta6 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta7{
+                            grid-area:compraVenta7 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta8{
+                            grid-area:compraVenta8 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+
+                            
+                        }
+                        .compraVenta9{
+                            grid-area:compraVenta9 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta10{
+                            grid-area:compraVenta10 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta11{
+                            grid-area:compraVenta11 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta12{
+                            grid-area:compraVenta12 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta13{
+                            grid-area:compraVenta13 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta14{
+                            grid-area:compraVenta14 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta15{
+                            grid-area:compraVenta15 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+                        .compraVenta16{
+                            grid-area:compraVenta16 ;   
+                            @include compraVenta;
+                            .botonC{
+                                background-color: $colorBotonC;
+                                @extend %boton;
+                            }
+                            .botonV{
+                                background-color: $colorBotonV;
+                                @extend %boton;
+                            }
+                            
+                        }
+
+                     
+
+                    }
+
+/* ESTILO DEL HTML NOTICIAS*/
+
+.noticias{
+    display: grid;
+    grid-template-columns:auto ;
+    grid-template-rows: auto;
+    grid-template-areas:"estiloNoticias1"
+                         "estiloNoticias2"
+                         "estiloNoticias3" ;
+                         .estiloNoticias1{
+                            grid-area: estiloNoticias1 ;
+                           @include noticias;
+                            
+                        }   
+                        .estiloNoticias2{
+                            grid-area: estiloNoticias2 ;
+                            @include noticias;
+                            
+                        }   
+                        .estiloNoticias3{
+                            grid-area: estiloNoticias3 ;
+                            @include noticias;
+                            
+
+}
+
+
+
+/*ESTILO DEL HTML APRENDER*/
+.mainAprender{
+    display:grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto ;
+    grid-template-areas: "estiloAprender1"
+                         "estiloAprender2"
+                         "estiloAprender3"
+                         "estiloAprender4";
+                        
+                        }   
+} 
+
+.estiloAprender1{
+    grid-area: estiloAprender1 ;
+   @include aprender;
+}
+.estiloAprender2{
+    grid-area: estiloAprender2;
+    @include aprender;
+}
+.estiloAprender3{
+    grid-area: estiloAprender3;
+    @include aprender;
+}
+.estiloAprender4{
+    grid-area: estiloAprender4;
+    @include aprender;
+}
+
+
+/*ESTILO DEL HTML REGISTRO*/
+main form fieldset{
+    padding: nth($list: $medidas, $n:2);
+    margin: nth($list: $medidas, $n:2);
+    background-color:$colorPrincipal;
+    color: $colorLetras;
+    main form fieldset div{
+        margin: nth($list: $medidas, $n:2);
+        
+    
+    }
+    
+}
+
+
+
+
+/*ESTILO DEL FOOTER*/
+ .redes{
+   padding: nth($list: $medidas, $n:3);
+    text-align: end;
+    .imgRedes{
+        height: nth($list: $medidas, $n:3);
+        margin: nth($list: $medidas, $n:2);
+     }
+
+ }
+ 
+
+
+
+ @media screen and (min-width: 576px){
+ /*MEDIA-QUERIES INDEX*/
+ header nav ul{
+    display: flex;
+   justify-content: space-around ;
+   }
+   
+  body .mainInicio{
+    grid-template-areas:"top1 top2  top3"
+                        "top4 top5 top6"
+                        "top7 top8 top9"
+                        "top10 top top" ;
+}
+ 
+/*MEDIA-QUERIES COMPRA/VENTA*/
+.mainCompraVenta{
+    grid-template-areas: "compraVenta1 compraVenta2 compraVenta3"
+                         "compraVenta4 compraVenta5 compraVenta6"
+                         "compraVenta7 compraVenta8 compraVenta9"
+                         "compraVenta10 compraVenta11 compraVenta12"
+                         "compraVenta13 compraVenta14 compraVenta15"
+                         "compraVenta16 compraVenta compraVenta";
+
+}
+}
+   
+   
+
+   @media screen and (min-width: 1024px){
+    
+   body .mainInicio{
+        grid-template-areas:"top1 top2  top3 top4"
+                            "top5 top6 top7 top8"
+                            "top9 top10 top top" ;
+    
+    }
+
+    /*MEDIA-QUERIES COMPRA/VENTA*/
+.mainCompraVenta{
+    grid-template-areas: "compraVenta1 compraVenta2 compraVenta3 compraVenta4 "
+                         "compraVenta5 compraVenta6 compraVenta7 compraVenta8"
+                         "compraVenta9 compraVenta10 compraVenta11 compraVenta12"
+                         "compraVenta13 compraVenta14 compraVenta15 compraVenta16";
+
+}
+li:hover{
+    transform: scale(0.9);
+    transition: 0.50s;
+    color: $colorBordes;
+    border-bottom: 0.20rem solid;
+
+}
+
+.tops1:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+.tops2:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+.tops3:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+.tops4:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+.tops5:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+.tops6:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+.tops7:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+.tops8:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+.tops9:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+.tops10:hover{
+    transform: scale(1.05);
+    transition: 0.50s;
+    
+}
+
+.botonC:hover{
+    transform: scale(1.01);
+    transition: 0.50s;
+    border: 0.10rem solid $colorBotonC;
+}
+.botonV:hover{
+    transform: scale(1.01);
+    transition: 0.50s;
+    border: 0.10rem solid $colorBotonV;
+
+}
+
+
+}
+
+    

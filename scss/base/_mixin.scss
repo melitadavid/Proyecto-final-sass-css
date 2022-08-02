@@ -1,0 +1,53 @@
+//mixin para los tops de index.html
+@mixin tops {
+                            background-color:$colorTerciario;
+                            padding: nth($list: $medidas, $n:1);
+                            margin: nth($list: $medidas, $n:1);
+                            border-radius:0.10rem ;
+                            color: $colorLetras;
+                            display: inline-block;
+                            text-align: center;
+                            box-shadow: 1px 1px 4px 0.50px $colorBordes;
+    
+}
+
+//mixin de compra/venta.html y botones c y v
+@mixin compraVenta {
+    background-color:$colorTerciario;
+    display: inline-block;
+    text-align: center;   
+    padding: nth($list: $medidas, $n:1);
+    margin: nth($list: $medidas, $n:1);
+    gap: nth($list: $medidas, $n:2);
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.50px $colorBordes;
+    color: $colorLetras;
+    .botonCompraVenta{
+        display: flex;
+        gap: nth($list: $medidas, $n:2);
+        justify-content: center;
+    
+    }
+
+}
+
+//Mixin de noticias 
+
+@mixin noticias{
+    background-color: $colorTerciario;
+    margin: nth($list: $medidas, $n:2);
+    padding: nth($list: $medidas, $n:2);
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.50px $colorBordes;
+    color: $colorLetras;
+}
+
+//mixin de aprender
+@mixin aprender {
+    background-color:$colorTerciario;
+    margin: nth($list: $medidas, $n:2);
+    padding: nth($list: $medidas, $n:2);
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.50px $colorBordes;
+    color: $colorLetras;
+}

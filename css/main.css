@@ -1,0 +1,621 @@
+.mainCompraVenta .compraVenta1 .botonC, .mainCompraVenta .compraVenta1 .botonV, .mainCompraVenta .compraVenta2 .botonC, .mainCompraVenta .compraVenta2 .botonV, .mainCompraVenta .compraVenta3 .botonC, .mainCompraVenta .compraVenta3 .botonV, .mainCompraVenta .compraVenta4 .botonC, .mainCompraVenta .compraVenta4 .botonV, .mainCompraVenta .compraVenta5 .botonC, .mainCompraVenta .compraVenta5 .botonV, .mainCompraVenta .compraVenta6 .botonC, .mainCompraVenta .compraVenta6 .botonV, .mainCompraVenta .compraVenta7 .botonC, .mainCompraVenta .compraVenta7 .botonV, .mainCompraVenta .compraVenta8 .botonC, .mainCompraVenta .compraVenta8 .botonV, .mainCompraVenta .compraVenta9 .botonC, .mainCompraVenta .compraVenta9 .botonV, .mainCompraVenta .compraVenta10 .botonC, .mainCompraVenta .compraVenta10 .botonV, .mainCompraVenta .compraVenta11 .botonC, .mainCompraVenta .compraVenta11 .botonV, .mainCompraVenta .compraVenta12 .botonC, .mainCompraVenta .compraVenta12 .botonV, .mainCompraVenta .compraVenta13 .botonC, .mainCompraVenta .compraVenta13 .botonV, .mainCompraVenta .compraVenta14 .botonC, .mainCompraVenta .compraVenta14 .botonV, .mainCompraVenta .compraVenta15 .botonC, .mainCompraVenta .compraVenta15 .botonV, .mainCompraVenta .compraVenta16 .botonC, .mainCompraVenta .compraVenta16 .botonV {
+  border: none;
+  padding: 0.50rem;
+  border-radius: 0.10rem; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+/*ESTILO DEL HTML INDEX*/
+body {
+  background-color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  /*estilos del header*/ }
+  body .fondoUno {
+    background-color: #198754; }
+  body header {
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif; }
+    body header nav ul {
+      padding: 0.5rem;
+      gap: 1rem; }
+      body header nav ul li {
+        list-style: none;
+        font-size: 1rem;
+        padding: 0.5rem; }
+    body header .enlaces {
+      text-decoration: none;
+      color: #eeeeee; }
+    body header h1 {
+      padding: 1rem; }
+      body header h1 span {
+        color: #49ff29; }
+  body .subTituloIndex {
+    padding: 1rem; }
+  body .subTitulo {
+    margin: 2rem;
+    color: #eeeeee; }
+  body .carousel-inner {
+    padding: 1rem; }
+  body .mainInicio {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "top1 top2" "top3 top4" "top5 top6" "top7 top8" "top9 top10";
+    /*utilizando mixin en los tops 10*/ }
+    body .mainInicio .tops1 {
+      grid-area: top1;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+    body .mainInicio .tops2 {
+      grid-area: top2;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+    body .mainInicio .tops3 {
+      grid-area: top3;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+    body .mainInicio .tops4 {
+      grid-area: top4;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+    body .mainInicio .tops5 {
+      grid-area: top5;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+    body .mainInicio .tops6 {
+      grid-area: top6;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+    body .mainInicio .tops7 {
+      grid-area: top7;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+    body .mainInicio .tops8 {
+      grid-area: top8;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+    body .mainInicio .tops9 {
+      grid-area: top9;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+    body .mainInicio .tops10 {
+      grid-area: top10;
+      background-color: rgba(73, 69, 69, 0.85);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.10rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 1px 1px 4px 0.5px #33de1d; }
+  body footer {
+    background-color: rgba(73, 69, 69, 0.85);
+    color: white;
+    padding: 0.5rem; }
+
+/* ESTILO DEL HTML COMPRA/VENTA*/
+/*estilo de el main conteniendo las compras y ventas*/
+.subTitulo2 {
+  margin: 1rem;
+  color: white; }
+
+/*GRID*/
+.mainCompraVenta {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "compraVenta1 compraVenta2" "compraVenta3 compraVenta4" "compraVenta5 compraVenta6" "compraVenta7 compraVenta8" "compraVenta9 compraVenta10" "compraVenta11 compraVenta12" "compraVenta13 compraVenta14" "compraVenta15 compraVenta16"; }
+  .mainCompraVenta .compraVenta1 {
+    grid-area: compraVenta1;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta1 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta1 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta1 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta2 {
+    grid-area: compraVenta2;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta2 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta2 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta2 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta3 {
+    grid-area: compraVenta3;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta3 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta3 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta3 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta4 {
+    grid-area: compraVenta4;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta4 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta4 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta4 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta5 {
+    grid-area: compraVenta5;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta5 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta5 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta5 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta6 {
+    grid-area: compraVenta6;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta6 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta6 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta6 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta7 {
+    grid-area: compraVenta7;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta7 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta7 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta7 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta8 {
+    grid-area: compraVenta8;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta8 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta8 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta8 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta9 {
+    grid-area: compraVenta9;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta9 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta9 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta9 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta10 {
+    grid-area: compraVenta10;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta10 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta10 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta10 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta11 {
+    grid-area: compraVenta11;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta11 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta11 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta11 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta12 {
+    grid-area: compraVenta12;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta12 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta12 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta12 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta13 {
+    grid-area: compraVenta13;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta13 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta13 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta13 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta14 {
+    grid-area: compraVenta14;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta14 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta14 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta14 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta15 {
+    grid-area: compraVenta15;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta15 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta15 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta15 .botonV {
+      background-color: #d32424; }
+  .mainCompraVenta .compraVenta16 {
+    grid-area: compraVenta16;
+    background-color: rgba(73, 69, 69, 0.85);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+    .mainCompraVenta .compraVenta16 .botonCompraVenta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+    .mainCompraVenta .compraVenta16 .botonC {
+      background-color: #2dd02d; }
+    .mainCompraVenta .compraVenta16 .botonV {
+      background-color: #d32424; }
+
+/* ESTILO DEL HTML NOTICIAS*/
+.noticias {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "estiloNoticias1" "estiloNoticias2" "estiloNoticias3";
+  /*ESTILO DEL HTML APRENDER*/ }
+  .noticias .estiloNoticias1 {
+    grid-area: estiloNoticias1;
+    background-color: rgba(73, 69, 69, 0.85);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+  .noticias .estiloNoticias2 {
+    grid-area: estiloNoticias2;
+    background-color: rgba(73, 69, 69, 0.85);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+  .noticias .estiloNoticias3 {
+    grid-area: estiloNoticias3;
+    background-color: rgba(73, 69, 69, 0.85);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.10rem;
+    box-shadow: 1px 1px 4px 0.5px #33de1d;
+    color: white; }
+  .noticias .mainAprender {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "estiloAprender1" "estiloAprender2" "estiloAprender3" "estiloAprender4"; }
+
+.estiloAprender1 {
+  grid-area: estiloAprender1;
+  background-color: rgba(73, 69, 69, 0.85);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.10rem;
+  box-shadow: 1px 1px 4px 0.5px #33de1d;
+  color: white; }
+
+.estiloAprender2 {
+  grid-area: estiloAprender2;
+  background-color: rgba(73, 69, 69, 0.85);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.10rem;
+  box-shadow: 1px 1px 4px 0.5px #33de1d;
+  color: white; }
+
+.estiloAprender3 {
+  grid-area: estiloAprender3;
+  background-color: rgba(73, 69, 69, 0.85);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.10rem;
+  box-shadow: 1px 1px 4px 0.5px #33de1d;
+  color: white; }
+
+.estiloAprender4 {
+  grid-area: estiloAprender4;
+  background-color: rgba(73, 69, 69, 0.85);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.10rem;
+  box-shadow: 1px 1px 4px 0.5px #33de1d;
+  color: white; }
+
+/*ESTILO DEL HTML REGISTRO*/
+main form fieldset {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: black;
+  color: white; }
+  main form fieldset main form fieldset div {
+    margin: 1rem; }
+
+/*ESTILO DEL FOOTER*/
+.redes {
+  padding: 2rem;
+  text-align: end; }
+  .redes .imgRedes {
+    height: 2rem;
+    margin: 1rem; }
+
+@media screen and (min-width: 576px) {
+  /*MEDIA-QUERIES INDEX*/
+  header nav ul {
+    display: flex;
+    justify-content: space-around; }
+  body .mainInicio {
+    grid-template-areas: "top1 top2  top3" "top4 top5 top6" "top7 top8 top9" "top10 top top"; }
+  /*MEDIA-QUERIES COMPRA/VENTA*/
+  .mainCompraVenta {
+    grid-template-areas: "compraVenta1 compraVenta2 compraVenta3" "compraVenta4 compraVenta5 compraVenta6" "compraVenta7 compraVenta8 compraVenta9" "compraVenta10 compraVenta11 compraVenta12" "compraVenta13 compraVenta14 compraVenta15" "compraVenta16 compraVenta compraVenta"; } }
+
+@media screen and (min-width: 1024px) {
+  body .mainInicio {
+    grid-template-areas: "top1 top2  top3 top4" "top5 top6 top7 top8" "top9 top10 top top"; }
+  /*MEDIA-QUERIES COMPRA/VENTA*/
+  .mainCompraVenta {
+    grid-template-areas: "compraVenta1 compraVenta2 compraVenta3 compraVenta4 " "compraVenta5 compraVenta6 compraVenta7 compraVenta8" "compraVenta9 compraVenta10 compraVenta11 compraVenta12" "compraVenta13 compraVenta14 compraVenta15 compraVenta16"; }
+  li:hover {
+    transform: scale(0.9);
+    transition: 0.50s;
+    color: #33de1d;
+    border-bottom: 0.20rem solid; }
+  .tops1:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .tops2:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .tops3:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .tops4:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .tops5:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .tops6:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .tops7:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .tops8:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .tops9:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .tops10:hover {
+    transform: scale(1.05);
+    transition: 0.50s; }
+  .botonC:hover {
+    transform: scale(1.01);
+    transition: 0.50s;
+    border: 0.1rem solid #2dd02d; }
+  .botonV:hover {
+    transform: scale(1.01);
+    transition: 0.50s;
+    border: 0.1rem solid #d32424; } }
