@@ -1,6 +1,6 @@
 //mixin para los tops de index.html
 @mixin tops {
-                            background-color:$colorTerciario;
+                            background-image:url("../img/fondo.PNG");
                             padding: nth($list: $medidas, $n:1);
                             margin: nth($list: $medidas, $n:1);
                             border-radius:0.10rem ;

@@ -17,51 +17,66 @@
 //variables
 
 
-
  /*ESTILO DEL HTML INDEX*/
 body{
-    background-color: $colorPrincipal;
+    background-color: rgb(28, 28, 28);;
     font-family: 'Josefin Sans', sans-serif;
     .fondoUno{
-        background-color: $colorSecundario;
+        background-color: rgb(28, 28, 28);
+    }
+    .linkMas{
+        text-decoration: none;
+        color: $colorBordes;
     }
      /*estilos del header*/
     header{
     background-color: $colorPrincipal;
     font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 1px 1px 4px 0.50px $colorBordes;
+    
+    }
    
        nav ul {  
          padding: nth($list: $medidas, $n:1);
          gap: nth($list: $medidas, $n:2);
+         
          li{   
             list-style: none;   
             font-size: nth($list: $medidas, $n:2);
             padding: nth($list: $medidas, $n:1);
+            
+           
          }
      }
     
       .enlaces{
          text-decoration: none;
          color: $colorEnlaces;
+       
+         
       }
       h1{
-         padding: nth($list: $medidas, $n:2);
+        font-size: 1.7rem;
+         padding: nth($list: $medidas, $n:1);
          span{
             color:$colorSpan;
              }
       }
   }
     .subTituloIndex{
-        padding: nth($list: $medidas, $n:2);
+        padding: nth($list: $medidas, $n:1);
+        color: $colorLetras;
     }
     .subTitulo{
         margin: nth($list: $medidas, $n:3);
         color: $colorEnlaces;
+       
     }
-    .carousel-inner{
-        padding: nth($list: $medidas, $n:2);
+    h3{
+        padding-top: 3rem;
+        font-size: 1.5rem;
     }
-
+  
      
 .mainInicio{
     margin: nth($list: $medidas, $n:2);
@@ -72,8 +87,13 @@ body{
                         "top3 top4"
                         "top5 top6"
                         "top7 top8"
-                        "top9 top10" ;
+                        "top9 top10"
+                        "top0 top0" ;
 /*utilizando mixin en los tops 10*/
+                        .tops0{
+                            grid-area: top0;
+                            @include tops;
+                        }
                         .tops1{
                             grid-area: top1;
                             @include tops;
@@ -123,7 +143,7 @@ footer{
 }
 
   
-}
+
 
 /* ESTILO DEL HTML COMPRA/VENTA*/
 
@@ -441,7 +461,7 @@ main form fieldset{
 
 /*ESTILO DEL FOOTER*/
  .redes{
-   padding: nth($list: $medidas, $n:3);
+   padding: nth($list: $medidas, $n:2);
     text-align: end;
     .imgRedes{
         height: nth($list: $medidas, $n:3);
@@ -464,7 +484,7 @@ main form fieldset{
     grid-template-areas:"top1 top2  top3"
                         "top4 top5 top6"
                         "top7 top8 top9"
-                        "top10 top top" ;
+                        "top0 top10 top" ;
 }
  
 /*MEDIA-QUERIES COMPRA/VENTA*/
@@ -486,7 +506,7 @@ main form fieldset{
    body .mainInicio{
         grid-template-areas:"top1 top2  top3 top4"
                             "top5 top6 top7 top8"
-                            "top9 top10 top top" ;
+                            "top0 top9 top10 top" ;
     
     }
 
@@ -503,6 +523,7 @@ li:hover{
     transition: 0.50s;
     color: $colorBordes;
     border-bottom: 0.20rem solid;
+    
 
 }
 
