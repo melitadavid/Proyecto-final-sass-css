@@ -460,13 +460,20 @@ main form fieldset{
 
 
 /*ESTILO DEL FOOTER*/
- .redes{
-   padding: nth($list: $medidas, $n:2);
-    text-align: end;
-    .imgRedes{
-        height: nth($list: $medidas, $n:3);
-        margin: nth($list: $medidas, $n:2);
-     }
+footer{
+    .derechos{
+        margin: 0px;
+    }
+
+    .redes{
+        padding: nth($list: $medidas, $n:1);
+         text-align: end;
+         .imgRedes{
+             height: nth($list: $medidas, $n:2);
+             margin: nth($list: $medidas, $n:1);
+          }
+}
+
 
  }
  
